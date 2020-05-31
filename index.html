@@ -22,6 +22,13 @@
     }
 
     .left-block {
+      background: #303538;
+      float: left;
+      width: 200px;
+      height: 100%;
+    }
+
+    .left-block-item {
       width: calc(100% + 60px);
       background: #e14630;
       text-align: right;
@@ -39,18 +46,38 @@
       color: #e14630;
       font-size: 3em;
       margin-left: calc(100% - 300px);
+      margin-bottom: 0;
       font-family: "Times New Roman", Times, serif;
       font-weight: bold;
     }
 
+    .name-font-item {
+      top: 20px;
+    }
+
+    .name-font-last {
+      margin-left: calc(100% - 300px);
+      letter-spacing: 0.8em;
+      font-size: 1.5em;
+      top: 0px;
+      margin-bottom: 47px;
+    }
+
     .right-block {
+      background: whitesmoke;
+      width: 420px;
+      height: 700px;
+      margin-left: 200px;
+    }
+
+    .right-block-item {
       margin-left: calc(100% - 300px);
       width: calc(100% - calc(100% - 300px));
       height: 85px;
       margin-bottom: 50px;
     }
 
-    .right-block-item {
+    .right-block-item-font {
       width: calc(100% - 100px);
       font-size: 1.2em;
       margin: 0 15px 10px 0;
@@ -63,45 +90,63 @@
       width: auto;
       float: left;
     }
+
+    .margin-year {
+      margin-top: 20px
+    }
+
+    .margin-university {
+      margin-right: 0px;
+      width: 140px;
+    }
+
+    .image-style {
+      margin: 20% calc(100% - 140px);
+    }
+
+    .color-red {
+      color: #e14630;
+    }
+
+    .max-width {
+      width: 100%;
+    }
   </style>
 </head>
 
 <body>
   <div class="main-block">
     <div class="main-block-item">
-      <div style="background: #303538; float: left; width: 200px; height: 100%;">
-        <div style="margin: 20% calc(100% - 140px)">
+      <div class="left-block">
+        <div class="image-style">
           <img src="image/myPhoto.jpg" alt="myPhoto" width=200 height=200>
         </div>
-        <div class="left-block">Contact</div>
-        <div class="left-block">Education</div>
-        <div class="left-block">Skills</div>
+        <div class="left-block-item">Contact</div>
+        <div class="left-block-item">Education</div>
+        <div class="left-block-item">Skills</div>
       </div>
-      <div style="background: whitesmoke; width: 420px; height: 700px; margin-left: 200px;">
+      <div class="right-block">
         <p class="name-font">ANDREY</p>
-        <p class="name-font" style="top: 20px; margin-bottom: 0px;">CHENTSOV</p>
-        <p
-          style="margin-left: calc(100% - 300px); letter-spacing: 0.8em; font-size: 1.5em; top: 0px; margin-bottom: 47px;">
-          Front-end developer</p>
-        <div class="right-block">
-          <div class="margin" style="color: #e14630;"><img src="image/telephone-logo.png" alt="Telephone" width=24
-              height=24></div>
-          <div class="right-block-item" style="color: #e14630;">+380992161872</div>
-          <div class="margin" style="color: #e14630;"><img src="image/email-logo.png" alt="E-mail" width=24 height=24>
+        <p class="name-font name-font-item">CHENTSOV</p>
+        <p class="name-font-last">Front-end developer</p>
+        <div class="right-block-item">
+          <div class="margin color-red"><img src="image/telephone-logo.png" alt="Telephone" width=24 height=24></div>
+          <div class="right-block-item-font color-red">+380992161872</div>
+          <div class="margin color-red"><img src="image/email-logo.png" alt="E-mail" width=24 height=24>
           </div>
-          <div class="right-block-item" style="color: #e14630;">andreychenzov@gmail.com</div>
-          <div class="margin" style="color: #e14630;"><img src="image/github-logo.png" alt="Git" width=24 height=24>
+          <div class="right-block-item-font color-red">andreychenzov@gmail.com</div>
+          <div class="margin color-red"><img src="image/github-logo.png" alt="Git" width=24 height=24>
           </div>
-          <div class="right-block-item"><a href="https://github.com/AndreyChenzov242"
-              style="color: #e14630;">AndreyChenzov242</a></div>
+          <div class="right-block-item-font"><a href="https://github.com/AndreyChenzov242"
+              class="color-red">AndreyChenzov242</a></div>
         </div>
-        <div class="right-block">
-          <div class="margin" style="margin-right: 40px; margin-top: 20px">2018-present</div>
-          <div class="margin" style="margin-right: 0px; width: 120px;"><a href="https://pstu.edu/ru/"
-              style="color: #e14630;">PSTU Faculty of Computer Science</a> </div>
+        <div class="right-block-item">
+          <div class="margin margin-year">2018-present</div>
+          <div class="margin margin-university"><a href="https://pstu.edu/ru/" class="color-red">PSTU Faculty of
+              Computer Science</a> </div>
         </div>
-        <div class="right-block">
-          <div class="right-block_item" style="color: #e14630; width: 100%;">Photoshop CorelDRAW SQL Java C/C++ C# HTML
+        <div class="right-block-item">
+          <div class="right-block-item-font color-red max-width">Photoshop CorelDRAW SQL Java C/C++ C# HTML
             CSS JavaScript Microsoft Office Visual Basic for Applications Git</div>
         </div>
       </div>
